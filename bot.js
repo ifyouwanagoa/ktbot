@@ -8,7 +8,8 @@ client.on('ready', () => {
 
 client.on("message", (message) => {
   let men = message.mentions.users.first()
- 
+        var prefix = "#";
+  
   if (message.author.bot) return;
     if (message.author.id === client.user.id) return;
     if(!message.channel.guild) return;/// Mal , Codes
